@@ -526,8 +526,7 @@ a { color: inherit; text-decoration: none; }
   z-index: 2;
   width: 32.6rem;
   height: 11.6rem;
-  margin: -2.2rem auto 0;
-  padding-top: 1.4rem;
+  margin: 0 auto;     padding-top: 1.4rem;
   text-align: center;
   text-shadow: 0 0 .4rem #fff, 0 0 .4rem #fff, 0 0 .8rem #fff;
   font-family: "Noto Serif JP", serif;
