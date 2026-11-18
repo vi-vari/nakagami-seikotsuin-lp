@@ -104,20 +104,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 4.2rem;
   color: #d9506c;
 }
-.course__time {
-  position: absolute;
-  left: .3rem;
-  bottom: calc(100% - .8rem);
-  padding: 0 .5rem;
-  background: #d9506c;
-  color: #fff;
-  font-size: 1.9rem;
-  font-weight: 500;
-  line-height: 2.6rem;
-  letter-spacing: 0;
-  white-space: nowrap;
-}
-.course__time small { font-size: 1.25rem; }
 .course__title--long .gr { font-size: 4.1rem; }
 .course__title--long .pk { font-size: 3.6rem; }
 .course__price {
@@ -125,7 +111,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   align-items: center;
   gap: .8rem;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   font-family: "Noto Serif JP", serif;
   white-space: nowrap;
 }
@@ -142,7 +128,7 @@ a { color: inherit; text-decoration: none; }
   margin-right: .2rem;
 }
 .p-old__num { font-size: 3.3rem; font-weight: 500; letter-spacing: -.03em; }
-.p-old__yen { font-size: 2.2rem; margin-left: -1.6rem; }
+.p-old__yen { position: relative; font-size: 2.2rem; }
 .p-old::after {
   content: "";
   position: absolute;
@@ -151,25 +137,52 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid #8a7660;
   transform: rotate(-7deg);
 }
-.tax { font-size: .8rem; align-self: flex-start; margin-top: .4rem; width: 1.6rem; white-space: nowrap; }
+.tax {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  font-size: .8rem;
+  line-height: 1;
+  white-space: nowrap;
+}
 .p-trial {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   writing-mode: vertical-rl;
   background: #7a5a3a;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 2rem;
   line-height: 1;
-  padding: .5rem .5rem;
-  letter-spacing: .1em;
+  padding: 0 .7rem;
+  letter-spacing: .3em;
 }
+.p-new-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.course__time {
+  padding: 0 .5rem;
+  background: #d9506c;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  white-space: nowrap;
+}
+.course__time small { font-size: 1.25rem; }
 .p-new {
   display: flex;
   align-items: flex-end;
   color: #d9506c;
   text-shadow: 0 2px 2px rgba(120, 40, 60, .25);
 }
-.p-new__num { font-size: 5.2rem; font-weight: 500; line-height: 1; letter-spacing: -.02em; }
-.p-new__yen { font-size: 3rem; line-height: 1.1; margin-left: -1.6rem; }
-.p-new .tax { margin-top: -.4rem; }
+.p-new__num { font-size: 4.4rem; font-weight: 500; line-height: 1; letter-spacing: -.02em; }
+.p-new__yen { position: relative; font-size: 2.6rem; line-height: 1.1; }
+.p-new .tax { margin-bottom: .2rem; }
 
 .btn {
   position: relative;
