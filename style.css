@@ -381,16 +381,7 @@ a { color: inherit; text-decoration: none; }
 }
 .but__title span { background: #fff; padding: 0 .8rem; }
 .but__note { margin-top: .4rem; font-family: "Noto Serif JP", serif; font-size: 1.6rem; }
-.but__illust { position: relative; width: 33.5rem; margin: .6rem auto 0; }
-.but__illust img { display: block; width: 100%; mix-blend-mode: darken; }
-.but__symptoms { list-style: none; }
-.but__symptoms li {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: #555;
-  font-size: 1.1rem;
-  white-space: nowrap;
-}
+.but__illust { width: 33.5rem; margin: .6rem auto 0; mix-blend-mode: darken; }
 .but__hand2 { margin-top: 1.8rem; font-size: 2.2rem; font-weight: 600; }
 .but__brush { position: relative; margin-top: .4rem; }
 .but__brush img { mix-blend-mode: darken; }
